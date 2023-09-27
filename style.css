@@ -212,3 +212,24 @@ footer {
 .add-to-cart:hover {
     background-color: #0056b3; 
 }
+
+/* Estilos para as categorias */
+.categories {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.category {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #333; /* Cor de fundo da categoria */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remova o sublinhado do link */
+    border-radius: 5px; /* Cantos arredondados */
+    transition: background-color 0.3s; /* Efeito de transição suave */
+}
+
+.category:hover {
+    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+}
