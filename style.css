@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #d2a3db;
+    background-color: #fdfdfd;
 }
 
 .container {
@@ -11,6 +11,14 @@ body {
     margin: 0 auto;
     padding: 20px;
 }
+
+/* Estilos para as imagens dos produtos */
+.product img {
+    width: 100%; /* Define a largura da imagem como 100% do espaço disponível */
+    max-width: 200px; /* Define uma largura máxima para a imagem (ajuste conforme necessário) */
+    height: auto; /* Mantém a proporção original da imagem */
+}
+
 
 /* Estilos para o cabeçalho */
 header {
@@ -46,6 +54,49 @@ h2 {
     font-size: 24px;
     margin-top: 20px;
 }
+
+/* Estilos para a seção de produtos em destaque */
+.featured-products {
+    text-align: center;
+}
+
+/* Estilos para a classe .slick-carousel (o contêiner dos produtos) */
+.slick-carousel {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+}
+
+/* Estilos para cada produto */
+.product {
+    text-align: left; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+/* Estilos para a imagem do produto */
+.product img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Estilos para o botão "Adicionar ao Carrinho" */
+.add-to-cart {
+    background-color: #007bff; 
+    color: #fff; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Estilos para o botão ao passar o mouse */
+.add-to-cart:hover {
+    background-color: #0056b3; 
+}
+
 
 /* Estilos para o rodapé */
 footer {
@@ -144,4 +195,20 @@ footer {
     .contact-form {
         padding: 10px;
     }
+}
+
+/* Estilos para o botão "Adicionar ao Carrinho" */
+.add-to-cart {
+    background-color: #333; 
+    color: #fff;
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+/* Estilos para o botão ao passar o mouse */
+.add-to-cart:hover {
+    background-color: #0056b3; 
 }
