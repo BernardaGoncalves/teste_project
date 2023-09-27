@@ -1,0 +1,147 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #d2a3db;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Estilos para o menu de navegação */
+.menu {
+    text-align: left;
+}
+
+.menu-item {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+    font-size: 18px;
+}
+
+/* Estilos para os ícones do menu */
+.menu-item i {
+    margin-right: 5px;
+}
+
+/* Estilos para seções */
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%; 
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        justify-content:left;
+        flex-wrap: wrap;
+    }
+
+    .menu-item {
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Estilo para a barra de pesquisa */
+.barra {
+    text-align: right;
+}
+#search-bar {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: 200px; 
+}
+
+/* Estilo para o botão de pesquisa */
+#search-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    
+}
+
+/* Estilo para o ícone de pesquisa */
+#search-button i {
+    font-size: 18px;
+}
+
+/* Estilos para a seção de formulário de contato */
+.contact-form {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para o formulário de contato */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 10px;
+    }
+}

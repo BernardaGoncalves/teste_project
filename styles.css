@@ -1,0 +1,69 @@
+/* Estilos para o cabeçalho */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para os formulários de login e registro */
+.login-form, .register-form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.login-form h1, .register-form h1 {
+    text-align: center;
+}
+
+.login-form form, .register-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form label, .register-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.login-form input[type="submit"],
+.register-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login-form p, .register-form p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.login-form a, .register-form a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .login-form, .register-form {
+        padding: 10px;
+    }
+}
