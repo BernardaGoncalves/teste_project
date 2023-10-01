@@ -4,7 +4,10 @@ body {
     margin: 0;
     padding: 0;
     background-color: #fdfdfd;
+    overflow-x: hidden;
 }
+
+
 
 .container {
     max-width: 1200px;
@@ -15,7 +18,7 @@ body {
 /* Estilos para as imagens dos produtos */
 .product img {
     width: 100%; /* Define a largura da imagem como 100% do espaço disponível */
-    max-width: 200px; /* Define uma largura máxima para a imagem (ajuste conforme necessário) */
+    max-width: 100%; /* Define uma largura máxima para a imagem (ajuste conforme necessário) */
     height: auto; /* Mantém a proporção original da imagem */
 }
 
@@ -29,12 +32,16 @@ header {
 }
 
 h1 {
-    margin: 0;
+    margin: 2;
+    text-align: center;
 }
 
 /* Estilos para o menu de navegação */
 .menu {
     text-align: left;
+}
+.barra {
+    float: right; 
 }
 
 .menu-item {
@@ -48,6 +55,8 @@ h1 {
 .menu-item i {
     margin-right: 5px;
 }
+
+
 
 /* Estilos para seções */
 h2 {
@@ -63,7 +72,7 @@ h2 {
 /* Estilos para a classe .slick-carousel (o contêiner dos produtos) */
 .slick-carousel {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(4, 1fr); 
     gap: 20px; 
 }
 
@@ -75,38 +84,15 @@ h2 {
     border-radius: 5px; 
 }
 
-/* Estilos para a imagem do produto */
-.product img {
-    max-width: 100%; 
-    height: auto; 
-}
-
-/* Estilos para o botão "Adicionar ao Carrinho" */
-.add-to-cart {
-    background-color: #007bff; 
-    color: #fff; 
-    padding: 10px 15px; 
-    border: none; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: background-color 0.3s; 
-}
-
-/* Estilos para o botão ao passar o mouse */
-.add-to-cart:hover {
-    background-color: #0056b3; 
-}
-
-
 /* Estilos para o rodapé */
 footer {
     text-align: center;
     background-color: #333;
     color: #fff;
     padding: 10px;
-    position: fixed; 
     bottom: 0; 
     width: 100%; 
+    font-size: 10px;
 }
 
 /* Estilos responsivos */
@@ -131,11 +117,12 @@ footer {
     text-align: right;
 }
 #search-bar {
-    padding: 10px;
+    padding: 4px;
     border: none;
     border-radius: 5px;
     margin-right: 10px;
     width: 200px; 
+    margin: 0 10px;
 }
 
 /* Estilo para o botão de pesquisa */
@@ -144,7 +131,7 @@ footer {
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
+    padding: 10px 10px;
     cursor: pointer;
     
 }
@@ -154,19 +141,29 @@ footer {
     font-size: 18px;
 }
 
-/* Estilos para a seção de formulário de contato */
+/* Estilos para centralizar o conteúdo da classe .contact-form */
 .contact-form {
-    margin: 20px;
-    padding: 20px;
-    background-color: #f5f5f5;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Centraliza o conteúdo horizontalmente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh; /* Centraliza verticalmente na altura da janela */
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+
 }
+
 
 /* Estilos para o formulário de contato */
 .contact-form form {
     display: flex;
     flex-direction: column;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    height: 50%;
+    width: 25%;
+    box-shadow: 2px 2px 4px rgba(2, 2, 2, 0.3);
 }
 
 .contact-form label {
@@ -179,6 +176,10 @@ footer {
     border: 1px solid #ccc;
     border-radius: 5px;
     resize: vertical;
+    width: 70%;
+    height: 50%;
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block; /* Permite que o margin funcione para alinhar verticalmente */
 }
 
 .contact-form input[type="submit"] {
@@ -188,14 +189,10 @@ footer {
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
+    width: 98%;
 }
 
-/* Estilos responsivos */
-@media (max-width: 768px) {
-    .contact-form {
-        padding: 10px;
-    }
-}
+
 
 /* Estilos para o botão "Adicionar ao Carrinho" */
 .add-to-cart {
@@ -206,11 +203,13 @@ footer {
     border-radius: 5px; 
     cursor: pointer; 
     transition: background-color 0.3s; 
+    width: 100%;
 }
 
 /* Estilos para o botão ao passar o mouse */
 .add-to-cart:hover {
-    background-color: #0056b3; 
+    background-color: #f3f7fc; 
+    color: #000;
 }
 
 /* Estilos para as categorias */
@@ -231,5 +230,6 @@ footer {
 }
 
 .category:hover {
-    background-color: #0056b3; /* Cor de fundo mais escura ao passar o mouse */
+    background-color: #f9fbfd;
+    color: #000;
 }
